@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: "org.postgresql.Driver"
+    url: "jdbc:postgresql://gge-pgpro-dev-db.mdi.local:5432/pgdb?sslmode=disable"
+    hikari:
+      auto-commit: false
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+medo:
+  gateway:
+    sign:
+      alias: 0a2d0efd2-e93a-a01d-b9d9-65da7dd2ece
+      password: 1
+      stamp:
+        dimension: 83;36
+      detaching:
+        enabled: false
+    reg:
+      stamp:
+        dimension: 83;30
+    folder:
+      in:
+        active: \\test\t
+        archive: \\test\t
+        not:
+          active: \\test\t
+      out:
+        active: \\test\t
+        archive: \\test\t
+    scheduler:
+      enable: false

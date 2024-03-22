@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /purchase-bonus
+  port: 8080
